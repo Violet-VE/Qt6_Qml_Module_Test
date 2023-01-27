@@ -1,6 +1,6 @@
 import QtQuick
-import Style
-import Violet
+import UI.Style
+import UI.Components.Violet
 
 VEWindow {
     id: root
@@ -16,7 +16,7 @@ VEWindow {
         anchors.centerIn: parent
         text: qsTr("Hey!你好！")
         font.family: FontFamilties.mainFontName
-        font.pixelSize: 96
+        font.pixelSize: 48
         color: "#FF0000"
     }
 }

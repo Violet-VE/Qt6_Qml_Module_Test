@@ -11,8 +11,8 @@ qt_add_library(BusinessLib STATIC)
 set_target_properties(BusinessLib PROPERTIES AUTOMOC ON)
 target_link_libraries(BusinessLib PRIVATE Qt6::Quick)
 
-qt_add_qml_module(BusinessLib
-    URI Business
+qt6_add_qml_module(BusinessLib
+    URI UI.Components.Business
     VERSION 1.0
     RESOURCE_PREFIX /violet-ve.com/imports
     QML_FILES ${QMLFILES}

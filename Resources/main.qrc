@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>Imgs/Preview.jpg</file>
         <file>Fonts/GEETYPE-XiYuanGBT-Flash.ttf</file>
+        <file>Imgs/setting.png</file>
     </qresource>
 </RCC>

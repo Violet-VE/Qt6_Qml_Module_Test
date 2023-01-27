@@ -7,11 +7,11 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_STANDARD 20)
 
-list(APPEND QML_IMPORT_PATH ${PROJECT_SOURCE_DIR})
-list(APPEND QML_IMPORT_PATH ${PROJECT_SOURCE_DIR}/UI)
-list(APPEND QML_IMPORT_PATH ${PROJECT_SOURCE_DIR}/UI/Components)
+set(QML_PATH ${PROJECT_SOURCE_DIR}
+    ${PROJECT_SOURCE_DIR}/UI
+    ${PROJECT_SOURCE_DIR}/UI/Components)
 
-set(QML_IMPORT_PATH ${QML_IMPORT_PATH} CACHE STRING "导入模块路径" FORCE)
+set(QML_IMPORT_PATH ${QML_PATH} CACHE STRING "导入模块路径" FORCE)
 
 set(CPPFILES
         Src/main.cpp)
@@ -26,9 +26,9 @@ set(QRCFILES
 
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
 
-add_subdirectory(UI/Style)
 add_subdirectory(UI/Components/Business)
 add_subdirectory(UI/Components/Violet)
+add_subdirectory(UI/Style)
 
 # 项目窗口对文件进行分组
 SOURCE_GROUP("Resource Files" FILES ${QRCFILES})

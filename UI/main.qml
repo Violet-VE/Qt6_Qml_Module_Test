@@ -1,5 +1,4 @@
-import Business
+import UI.Components.Business
 
 PTWindow {
-    id: root
 }
