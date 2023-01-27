@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Imgs/Preview.jpg</file>
+        <file>Fonts/GEETYPE-XiYuanGBT-Flash.ttf</file>
+    </qresource>
+</RCC>
